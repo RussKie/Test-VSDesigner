@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SimpleWinForms\Form1.cs">
+      <Link>Form1.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\SimpleWinForms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Form1.Designer.cs</Link>
+    </Compile>
     <Compile Include="..\SimpleWinForms\Form2.cs">
       <Link>Form2.cs</Link>
       <SubType>Form</SubType>
@@ -56,6 +64,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\SimpleWinForms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Form1.resx</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\SimpleWinForms\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
       <Link>Form2.resx</Link>
